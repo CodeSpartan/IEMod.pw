@@ -345,6 +345,13 @@ namespace IEMod.Mods.Options {
             }
         }
 
+        [Save]
+        [Label("Max Camping Supplies")]
+        [Description(
+            "Number of purchasable Camping Supplies. You can set the maximum value or you can disable checking methods. (Rest without any CS.)"
+            )]
+        public static MaxCampingSuppliesOptions MaxCampingSupplies;
+
         private static Dictionary<string, FieldInfo> _fieldCache;
 
 		public static Dictionary<string, FieldInfo> FieldCache {
@@ -626,5 +633,27 @@ namespace IEMod.Mods.Options {
             [Description("One hundred twenty eight (128)")]
             OneHundredTwentyEight
         }
+
+        [NewType]
+        public enum MaxCampingSuppliesOptions
+        {
+            [Description("No change (based on the difficulty level)")]
+            Default = 0,
+            [Description("Default (8)")]
+            Normal_8,
+            [Description("Double (16)")]
+            Double_16,
+            [Description("Triple (24)")]
+            Triple_24,
+            [Description("Quadra (32)")]
+            Quadra_32,
+            [Description("Sixty-four (64)")]
+            Sixty_four_64,
+            [Description("Ninety-nine (99)")]
+            Ninety_nine_99,
+            [Description("Disable check and use")]
+            Disabled
+        }
+
     }
 }

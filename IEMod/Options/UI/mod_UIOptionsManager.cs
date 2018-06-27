@@ -81,6 +81,8 @@ namespace IEMod.Mods.Options {
         [NewMember]
         private QuickDropdown<IEModOptions.MaxAdventurersOptions> _maxAdventurersCmb;
         [NewMember]
+        private QuickDropdown<IEModOptions.MaxCampingSuppliesOptions> _maxCampingSuppliesOptionsCmb;
+        [NewMember]
         private QuickCheckbox _hideAntiClassSpells;
         [NewMember]
         private QuickCheckbox _hideWeaponEffects;
@@ -296,6 +298,11 @@ namespace IEMod.Mods.Options {
             _maxAdventurersCmb.Width = cmbWidth;
             _maxAdventurersCmb.LabelWidth = cmbLabelWidth;
             _maxAdventurersCmb.Transform.localPosition = centerCmbTop.Plus(y: -180);
+
+            _maxCampingSuppliesOptionsCmb = quickFactory.EnumDropdown(() => IEModOptions.MaxCampingSupplies);
+            _maxCampingSuppliesOptionsCmb.Width = cmbWidth;
+            _maxCampingSuppliesOptionsCmb.LabelWidth = cmbLabelWidth;
+            _maxCampingSuppliesOptionsCmb.Transform.localPosition = centerCmbTop.Plus(y: -210);
 
             _capesHidden = quickFactory.Checkbox(() => IEModOptions.CapesHidden);
             _capesHidden.LocalPosition = column1Top.Plus(y: -327);

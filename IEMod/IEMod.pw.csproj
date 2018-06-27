@@ -116,6 +116,8 @@
     <Compile Include="Mods\InventorySlots\mod_Equipment.cs" />
     <Compile Include="Mods\MaxAdventurers\mod_PartyMemberAI.cs" />
     <Compile Include="Mods\NoEngagement\Mod_NoEngagement_HudEngagementIndicator.cs" />
+    <Compile Include="Mods\PlayableCampingSupplies\mod_CampingSupplies.cs" />
+    <Compile Include="Mods\PlayableCampingSupplies\mod_RestZone.cs" />
     <Compile Include="Mods\SoulBoundCrafting\mod_UIItemInspectManager.cs" />
     <Compile Include="Mods\ToggleWalking\mod_MappedInput.cs" />
     <Compile Include="Mods\ToggleWalking\mod_Player.cs" />
