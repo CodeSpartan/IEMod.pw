@@ -196,3 +196,9 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# Nuget files
+.nuget/
+
+# Nuget packages from "packages.config"
+Mono.Cecil.0.9.5.4/
