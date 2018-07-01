@@ -1,0 +1,23 @@
+# Use https (public access) instead of git for git-submodules. This modifies only Travis-CI behavior!
+
+# disable the default submodule logic
+git:
+  submodules: false
+
+# use sed to replace the SSH URL with the public URL, then init and update submodules
+before_install:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
+
+language: csharp
+solution: IEMod.pw.sln
+
+mono:
+    - latest
+
+install:
+    - sudo apt-get install -y gtk-sharp2
+    - nuget restore IEMod.pw.sln
+
+script:
+    - xbuild /p:Configuration=net_4_5_Release IEMod.pw.sln
