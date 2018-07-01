@@ -20,4 +20,4 @@ install:
     - nuget restore IEMod.pw.sln
 
 script:
-    - xbuild /p:Configuration=net_4_5_Release IEMod.pw.sln
+    - msbuild ./IEMod.pw.sln /t:Patchwork.Attributes;IEMod.pw /p:Configuration="net_4_5_Release" /p:Platform="x86" /p:BuildProjectReferences=false
