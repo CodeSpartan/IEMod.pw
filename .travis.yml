@@ -20,5 +20,5 @@ install:
     - nuget restore IEMod.pw.sln
 
 script:
-    - msbuild ./IEMod.pw.sln /t:Patchwork.Attributes /p:Configuration=net_4_5_Release /p:Platform=x86 /p:BuildProjectReferences=true
-    - msbuild ./IEMod.pw.sln /t:IEMod.pw /p:Configuration=net_4_5_Release /p:Platform=x86 /p:BuildProjectReferences=true
+#    - msbuild ./Patchwork/Patchwork.sln /t:Patchwork.Attributes/Patchwork.Attributes /p:Configuration=net_4_5_Release /p:Platform=x86 /p:BuildProjectReferences=false
+    - msbuild ./IEMod.pw.sln /t:IEMod.pw /p:Configuration=net_4_5_Release /p:Platform=x86 /p:BuildProjectReferences=false
