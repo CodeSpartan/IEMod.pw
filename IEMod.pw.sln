@@ -5,17 +5,17 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9E6FE0FD-A2B5-4383-A4BE-02B8DC65E030}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget/NuGet.Config = .nuget/NuGet.Config
+		.nuget/NuGet.exe = .nuget/NuGet.exe
+		.nuget/NuGet.targets = .nuget/NuGet.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{88191D81-6687-439B-A508-B5FDFC490339}"
 	ProjectSection(SolutionItems) = preProject
 		IEMod.SharedAttributes.cs = IEMod.SharedAttributes.cs
-		IEMod\Properties\IEMod.Version.cs = IEMod\Properties\IEMod.Version.cs
-		Patchwork\Patchwork.SharedAttributes.cs = Patchwork\Patchwork.SharedAttributes.cs
-		Patchwork\Patchwork.Attributes\Properties\PatchworkInfo.cs = Patchwork\Patchwork.Attributes\Properties\PatchworkInfo.cs
+		IEMod/Properties/IEMod.Version.cs = IEMod/Properties/IEMod.Version.cs
+		Patchwork/Patchwork.SharedAttributes.cs = Patchwork/Patchwork.SharedAttributes.cs
+		Patchwork/Patchwork.Attributes/Properties/PatchworkInfo.cs = Patchwork/Patchwork.Attributes/Properties/PatchworkInfo.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patchwork", "Patchwork", "{C336E71B-BA44-499C-BD3E-B60D047F805C}"
@@ -23,15 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patchwork", "Patchwork", "{
 		Patchwork\README.md = Patchwork\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Attributes", "Patchwork\Patchwork.Attributes\Patchwork.Attributes.csproj", "{47DCBAF7-F2E6-486C-8887-FA41C271B74E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Attributes", "Patchwork/Patchwork.Attributes/Patchwork.Attributes.csproj", "{47DCBAF7-F2E6-486C-8887-FA41C271B74E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{92BE254C-DD62-49C3-9755-CF2E0F4BB7D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Tests.Patch", "Patchwork\Patchwork.Tests.Patch\Patchwork.Tests.Patch.csproj", "{9A1E9961-28B5-40B1-A04F-D46756746C88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Tests.Patch", "Patchwork/Patchwork.Tests.Patch/Patchwork.Tests.Patch.csproj", "{9A1E9961-28B5-40B1-A04F-D46756746C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Tests.Target", "Patchwork\Patchwork.Tests.Target\Patchwork.Tests.Target.csproj", "{551DCD0A-63F9-49BB-943C-EE470FA38AFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Tests.Target", "Patchwork/Patchwork.Tests.Target/Patchwork.Tests.Target.csproj", "{551DCD0A-63F9-49BB-943C-EE470FA38AFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatchworkLauncher", "Patchwork\PatchworkLauncher\PatchworkLauncher.csproj", "{6C30DED5-0078-48AC-91BB-A0A05A1FC899}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatchworkLauncher", "Patchwork/PatchworkLauncher/PatchworkLauncher.csproj", "{6C30DED5-0078-48AC-91BB-A0A05A1FC899}"
 	ProjectSection(ProjectDependencies) = postProject
 		{27F54C03-0235-41EA-B8FF-4667B7381DA3} = {27F54C03-0235-41EA-B8FF-4667B7381DA3}
 		{D9F3533C-2493-4A67-B32F-E703370653CB} = {D9F3533C-2493-4A67-B32F-E703370653CB}
@@ -40,46 +40,46 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatchworkLauncher", "Patchw
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cecil", "Cecil", "{4476AD76-650E-4C56-B9E3-58EC84AA73A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil", "Patchwork\cecil-0.9.6\Mono.Cecil.csproj", "{D68133BD-1E63-496E-9EDE-4FBDBF77B486}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil", "Patchwork/cecil-0.9.6/Mono.Cecil.csproj", "{D68133BD-1E63-496E-9EDE-4FBDBF77B486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Rocks", "Patchwork\cecil-0.9.6\rocks\Mono.Cecil.Rocks.csproj", "{FBC6DD59-D09D-499C-B03C-99C1C78FF2AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Rocks", "Patchwork/cecil-0.9.6/rocks/Mono.Cecil.Rocks.csproj", "{FBC6DD59-D09D-499C-B03C-99C1C78FF2AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Pdb", "Patchwork\cecil-0.9.6\symbols\pdb\Mono.Cecil.Pdb.csproj", "{63E6915C-7EA4-4D76-AB28-0D7191EEA626}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Pdb", "Patchwork/cecil-0.9.6/symbols/pdb/Mono.Cecil.Pdb.csproj", "{63E6915C-7EA4-4D76-AB28-0D7191EEA626}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Mdb", "Patchwork\cecil-0.9.6\symbols\mdb\Mono.Cecil.Mdb.csproj", "{8559DD7F-A16F-46D0-A05A-9139FAEBA8FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Mdb", "Patchwork/cecil-0.9.6/symbols/mdb/Mono.Cecil.Mdb.csproj", "{8559DD7F-A16F-46D0-A05A-9139FAEBA8FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pillars of Eternity", "Pillars of Eternity", "{3D6E61C9-82F9-4D67-85FA-C3B3BAA01B23}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEMod.pw", "IEMod\IEMod.pw.csproj", "{540E5EFB-4E95-404D-B511-31CC56A9A492}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEMod.pw", "IEMod/IEMod.pw.csproj", "{540E5EFB-4E95-404D-B511-31CC56A9A492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoEGameInfo", "PoEGameInfo\PoEGameInfo.csproj", "{D9F3533C-2493-4A67-B32F-E703370653CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoEGameInfo", "PoEGameInfo/PoEGameInfo.csproj", "{D9F3533C-2493-4A67-B32F-E703370653CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAssemblyCreator", "Patchwork\OpenAssemblyCreator\OpenAssemblyCreator.csproj", "{27F54C03-0235-41EA-B8FF-4667B7381DA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAssemblyCreator", "Patchwork/OpenAssemblyCreator/OpenAssemblyCreator.csproj", "{27F54C03-0235-41EA-B8FF-4667B7381DA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Engine", "Patchwork\Patchwork.Engine\Patchwork.Engine.csproj", "{565C269A-F5EB-4BBE-86E5-75C8D4E1CDF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchwork.Engine", "Patchwork/Patchwork.Engine/Patchwork.Engine.csproj", "{565C269A-F5EB-4BBE-86E5-75C8D4E1CDF7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{1AA2B0F6-880A-40BC-9FB1-0E9FA0170613}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BonusSpells.pw", "modules\BonusSpells.pw\BonusSpells.pw.csproj", "{A0BF71D7-7B01-4024-8FD2-D889351F91D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BonusSpells.pw", "modules/BonusSpells.pw/BonusSpells.pw.csproj", "{A0BF71D7-7B01-4024-8FD2-D889351F91D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastSneak.pw", "modules\FastSneak.pw\FastSneak.pw.csproj", "{1FAB0C91-9AA4-458A-8485-EE1D0140672E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastSneak.pw", "modules/FastSneak.pw/FastSneak.pw.csproj", "{1FAB0C91-9AA4-458A-8485-EE1D0140672E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LootShuffler.pw", "modules\LootShuffler.pw\LootShuffler.pw.csproj", "{08358A49-0FC5-435B-8BD6-927973E5CEB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LootShuffler.pw", "modules/LootShuffler.pw/LootShuffler.pw.csproj", "{08358A49-0FC5-435B-8BD6-927973E5CEB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPnerf25.pw", "modules\XPnerf25.pw\XPnerf25.pw.csproj", "{61970529-D29D-4DE7-A40F-FBEE2E829DF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPnerf25.pw", "modules/XPnerf25.pw/XPnerf25.pw.csproj", "{61970529-D29D-4DE7-A40F-FBEE2E829DF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPnerf50.pw", "modules\XPnerf50.pw\XPnerf50.pw.csproj", "{C3119ABE-F696-4AA3-A257-40C296DD59E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPnerf50.pw", "modules/XPnerf50.pw/XPnerf50.pw.csproj", "{C3119ABE-F696-4AA3-A257-40C296DD59E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPnerfSquare.pw", "modules\XPnerfSquare.pw\XPnerfSquare.pw.csproj", "{C08CC9C0-EE0C-4EDF-8121-86026B8553C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPnerfSquare.pw", "modules/XPnerfSquare.pw/XPnerfSquare.pw.csproj", "{C08CC9C0-EE0C-4EDF-8121-86026B8553C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellsPerEncounter.pw", "modules\SpellsPerEncounter.pw\SpellsPerEncounter.pw.csproj", "{58BF54CB-4583-44F2-8B87-3264BBDA721D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellsPerEncounter.pw", "modules/SpellsPerEncounter.pw/SpellsPerEncounter.pw.csproj", "{58BF54CB-4583-44F2-8B87-3264BBDA721D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCommands.pw", "modules\ConsoleCommands.pw\ConsoleCommands.pw.csproj", "{76927E3B-9CAF-41EA-8199-7A9E472A86D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCommands.pw", "modules/ConsoleCommands.pw/ConsoleCommands.pw.csproj", "{76927E3B-9CAF-41EA-8199-7A9E472A86D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideWeaponEffects.pw", "modules\HideWeaponEffects.pw\HideWeaponEffects.pw.csproj", "{30DA7165-69E3-467A-B3B8-3EFFB595D1F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideWeaponEffects.pw", "modules/HideWeaponEffects.pw/HideWeaponEffects.pw.csproj", "{30DA7165-69E3-467A-B3B8-3EFFB595D1F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
