@@ -1,14 +1,7 @@
-
 language: csharp
-solution: IEMod.pw.sln
-
-mono:
-    - latest
-
-install:
-    - sudo apt-get install -y gtk-sharp2
-    - nuget restore IEMod.pw.sln
-
-# script:
-#    - msbuild ./Patchwork/Patchwork.sln /t:Patchwork.Attributes/Patchwork.Attributes /p:Configuration=net_4_5_Release /p:Platform=x86 /p:BuildProjectReferences=false
-    - msbuild ./IEMod.pw.sln /p:Configuration=net_4_5_Release
+mono: none
+dotnet: 2.0.0
+dist: trusty
+script:
+ - dotnet restore
+ - dotnet build
