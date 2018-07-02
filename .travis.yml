@@ -7,7 +7,7 @@ osx_image: xcode8.3
 sudo: required
 # runtime config
 mono: none
-dotnet: 2.1.0
+dotnet: 2.1.300
 dist: trusty
 
 before_install:
