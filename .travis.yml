@@ -4,18 +4,13 @@ os:
   - osx
 osx_image: xcode8.3
 solution: IEMod.pw.sln
-mono: latest
-dist: trusty
 sudo: required
-dotnet: 2.1.1
 
 before_install:
   - msbuild /version
 
 install:
-  - dotnet restore
+  - nuget restore IEMod.pw.sln
 
 script:
-  - dotnet --info
-  - dotnet restore
-  - dotnet build --no-restore -c Release /v:m /p:Configuration=Release -f net45
+  - msbuild /p:Configuration=Release IEMod.pw.sln
