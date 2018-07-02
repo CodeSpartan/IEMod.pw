@@ -37,7 +37,7 @@ namespace PoEGameInfo {
 		        Executable = exeFile,
 		        AppVersion = appVersion,
 		        AppName = "Pillars of Eternity",
-				IconLocation = new FileInfo(Path.Combine(folderInfo.FullName, iconFile)),
+				//TODO IconLocation = new FileInfo(Path.Combine(folderInfo.FullName, iconFile)),
 		        IgnorePEVerifyErrors = new[] {
 			        //Expected an ObjRef on the stack.(Error: 0x8013185E). 
 			        //-you can ignore the following. They are present in the original DLL. I'm not sure if they are actually errors.
