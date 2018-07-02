@@ -213,12 +213,10 @@
     <Content Include="pevrfyrc.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="AfterBuild">
-    <MakeDir Directories="$(SolutionDir)Patchwork\PatchworkLauncher\$(OutDir)Mods" />
-    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SolutionDir)Patchwork\PatchworkLauncher\$(OutDir)Mods" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="AfterBuild">
+  </Target>
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
