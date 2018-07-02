@@ -2,7 +2,6 @@
 using UnityEngine;
 using IEMod.Helpers;
 using System;
-using Polenter.Serialization;
 using System.IO;
 using System.Xml.Serialization;
 using System.Collections.Generic;
