@@ -14,7 +14,7 @@ before_install:
 #  - msbuild /version
 
 install:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y gtk-sharp ; fi
+#  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y gtk-sharp ; fi
   - nuget restore IEMod.pw.sln
 
 script:
