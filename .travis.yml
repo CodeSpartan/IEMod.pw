@@ -1,3 +1,4 @@
+sudo: required
 language: csharp
 dist: trusty
 solution: IEMod.pw.sln
@@ -5,7 +6,6 @@ solution: IEMod.pw.sln
 #  - linux
 #  - osx
 #osx_image: xcode8.3
-#sudo: required
 # runtime config
 mono:
   - beta
