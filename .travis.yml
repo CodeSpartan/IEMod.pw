@@ -1,24 +1,24 @@
 language: csharp
+dist: trusty
 solution: IEMod.pw.sln
-os:
-  - linux
+#os:
+#  - linux
 #  - osx
 #osx_image: xcode8.3
-sudo: required
+#sudo: required
 # runtime config
-mono: none
+mono: latest
 dotnet: 2.1.300
-dist: trusty
 
-before_install:
+#before_install:
 #  - msbuild /version
 
-install:
+#install:
 #  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y gtk-sharp ; fi
-  - sudo apt-get install -y gtk-sharp2
+#  - sudo apt-get install -y gtk-sharp2
 #  - nuget restore IEMod.pw.sln
   
 script:
 #  - msbuild /p:Configuration=Release IEMod.pw.sln
-  - dotnet restore
-  - dotnet build /p:Configuration=Release --framework:netstandard2.0
+#  - dotnet restore
+  - dotnet build ./IEMod.pw.sln /p:Configuration=Release
