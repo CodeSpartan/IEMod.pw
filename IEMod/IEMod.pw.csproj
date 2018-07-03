@@ -9,6 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IEMod</RootNamespace>
     <AssemblyName>IEMod.pw</AssemblyName>
+    <TargetFrameworkVersion>netstandard2.0/TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>

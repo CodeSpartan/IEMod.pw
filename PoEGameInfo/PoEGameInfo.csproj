@@ -9,6 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PoEGameInfo</RootNamespace>
     <AssemblyName>PoEGameInfo</AssemblyName>
+    <TargetFrameworkVersion>netstandard2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
