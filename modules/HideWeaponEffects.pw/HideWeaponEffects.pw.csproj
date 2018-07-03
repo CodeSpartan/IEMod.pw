@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HideWeaponEffects.pw</RootNamespace>
     <AssemblyName>HideWeaponEffects.pw</AssemblyName>
-    <TargetFrameworkVersion>netstandard2.0</TargetFrameworkVersion>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
