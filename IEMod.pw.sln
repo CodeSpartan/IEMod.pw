@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{88191D81-6687-439B-A508-B5FDFC490339}"
 	ProjectSection(SolutionItems) = preProject
+		global.proj = global.proj
 		IEMod.SharedAttributes.cs = IEMod.SharedAttributes.cs
 		IEMod\Properties\IEMod.Version.cs = IEMod\Properties\IEMod.Version.cs
 	EndProjectSection
