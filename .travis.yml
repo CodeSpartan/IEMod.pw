@@ -7,18 +7,25 @@ solution: IEMod.pw.sln
 #osx_image: xcode8.3
 #sudo: required
 # runtime config
-mono: latest
+mono:
+  - beta
+#  - latest
+
 dotnet: 2.1.300
 
 #before_install:
 #  - msbuild /version
 
-#install:
+install:
+  - nuget restore IEMod.pw.sln
+  - dotnet restore IEMod.pw.sln
+
 #  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y gtk-sharp ; fi
 #  - sudo apt-get install -y gtk-sharp2
 #  - nuget restore IEMod.pw.sln
   
 script:
+  - msbuild /p:Configuration=Release /t:Rebuild IEMod.pw.sln
 #  - msbuild /p:Configuration=Release IEMod.pw.sln
 #  - dotnet restore
-  - dotnet build ./IEMod.pw.sln /p:Configuration=Release
+#  - dotnet build ./IEMod.pw.sln /p:Configuration=Release
