@@ -20,6 +20,8 @@ Original descriptions of IE Mod (some may be outdated):
 4. Fixed **Combad Only Mod** (partial)
 5. Fixed **ReenableAchievements**
 
+# Pulling
+After pulling this repo, run `git submodule update --init --recursive` to download the Patchwork submodule.
 
 # Building
 This is a "how-to" that assumes you're a programmer, but not necessarily a Visual Studio dev. These steps should be performed at your own risk, this will obviously not result in a tested or supported build.
