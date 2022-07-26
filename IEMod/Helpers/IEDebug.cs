@@ -3,7 +3,7 @@ using System.CodeDom.Compiler;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 

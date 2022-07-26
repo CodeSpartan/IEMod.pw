@@ -1,5 +1,5 @@
 ﻿using IEMod.Helpers;
-using Patchwork.Attributes;
+using Patchwork;
 using System;
 using System.Collections.Generic;
 using System.Linq;

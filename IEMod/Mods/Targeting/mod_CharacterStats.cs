@@ -1,7 +1,7 @@
 using System;
 using IEMod.Helpers;
 using IEMod.Mods.Options;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Random = UnityEngine.Random;
 

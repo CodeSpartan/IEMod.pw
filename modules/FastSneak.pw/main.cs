@@ -1,7 +1,7 @@
 ﻿using System;
 using AI.Achievement;
 using AI.Player;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Attack = AI.Achievement.Attack;
 

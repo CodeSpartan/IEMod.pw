@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using IEMod.QuickControls;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Helpers {

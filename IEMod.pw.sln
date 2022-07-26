@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9E6FE0FD-A2B5-4383-A4BE-02B8DC65E030}"
 	ProjectSection(SolutionItems) = preProject
@@ -54,6 +54,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pillars of Eternity", "Pill
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEMod.pw", "IEMod\IEMod.pw.csproj", "{540E5EFB-4E95-404D-B511-31CC56A9A492}"
+	ProjectSection(ProjectDependencies) = postProject
+		{565C269A-F5EB-4BBE-86E5-75C8D4E1CDF7} = {565C269A-F5EB-4BBE-86E5-75C8D4E1CDF7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoEGameInfo", "PoEGameInfo\PoEGameInfo.csproj", "{D9F3533C-2493-4A67-B32F-E703370653CB}"
 EndProject
@@ -2304,5 +2307,8 @@ Global
 		{58BF54CB-4583-44F2-8B87-3264BBDA721D} = {1AA2B0F6-880A-40BC-9FB1-0E9FA0170613}
 		{76927E3B-9CAF-41EA-8199-7A9E472A86D1} = {1AA2B0F6-880A-40BC-9FB1-0E9FA0170613}
 		{30DA7165-69E3-467A-B3B8-3EFFB595D1F8} = {1AA2B0F6-880A-40BC-9FB1-0E9FA0170613}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91F2FF2C-AF0B-4155-9FB0-47306B42D2F3}
 	EndGlobalSection
 EndGlobal

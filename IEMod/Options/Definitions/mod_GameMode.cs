@@ -1,5 +1,5 @@
 using IEMod.Helpers;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.Mods.Options {
 

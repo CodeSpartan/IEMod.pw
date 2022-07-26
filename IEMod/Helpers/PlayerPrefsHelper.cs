@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Helpers {

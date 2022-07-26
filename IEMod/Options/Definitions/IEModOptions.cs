@@ -8,7 +8,7 @@ using IEMod.Helpers;
 using IEMod.Mods.PartyBar;
 using IEMod.Mods.UICustomization;
 using IEMod.QuickControls;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.Options {

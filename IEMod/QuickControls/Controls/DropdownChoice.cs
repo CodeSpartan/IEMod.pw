@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using IEMod.Helpers;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.QuickControls {
 	[NewType]

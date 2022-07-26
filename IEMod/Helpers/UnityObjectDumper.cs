@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Object = UnityEngine.Object;
 

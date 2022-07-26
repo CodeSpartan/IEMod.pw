@@ -1,5 +1,5 @@
 using IEMod.Mods.Options;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.PlayableCampingSupplies

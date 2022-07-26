@@ -3,7 +3,7 @@ using AI.Achievement;
 using AI.Player;
 using IEMod.Mods.Options;
 using IEMod.Mods.ToggleWalking;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Attack = AI.Achievement.Attack;
 

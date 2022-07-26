@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using IEMod.Helpers;
-using Patchwork.Attributes;
+using Patchwork.AutoPatching;
 
 namespace IEMod
 {

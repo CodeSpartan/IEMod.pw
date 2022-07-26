@@ -8,7 +8,7 @@ using IEMod.Mods.Options;
 using IEMod.Mods.PartyBar;
 using IEMod.QuickControls;
 using IEMod.QuickControls.Behaviors;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Object = UnityEngine.Object;
 

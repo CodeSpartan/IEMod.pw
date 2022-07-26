@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Patchwork.Attributes;
+using Patchwork;
 using System.Xml.Serialization;
 
 namespace IEMod.Mods.AlterResourcesMod.Serialization

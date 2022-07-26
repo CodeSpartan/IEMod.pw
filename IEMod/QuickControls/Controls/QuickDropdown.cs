@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using IEMod.Helpers;
 using IEMod.Mods.StringTable;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Object = UnityEngine.Object;
 

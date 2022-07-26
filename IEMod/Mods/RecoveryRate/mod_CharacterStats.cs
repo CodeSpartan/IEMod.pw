@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using IEMod.Mods.Options;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Random = UnityEngine.Random;
 

@@ -5,7 +5,7 @@ using System.Text;
 using IEMod.Helpers;
 //using IEMod.Mods.UICustomization;
 using IEMod.QuickControls;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;

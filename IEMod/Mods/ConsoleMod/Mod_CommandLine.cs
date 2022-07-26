@@ -9,7 +9,7 @@ using System.Xml;
 using IEMod.Helpers;
 using IEMod.Mods.Options;
 //using IEMod.Mods.UICustomization;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 using IEMod.Mods.ObjectBrowser;
 

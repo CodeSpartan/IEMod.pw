@@ -1,6 +1,6 @@
 ﻿	using System;
 using System.Runtime.Serialization;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.Helpers {
 	[NewType]

@@ -1,4 +1,4 @@
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.ToggleWalking {

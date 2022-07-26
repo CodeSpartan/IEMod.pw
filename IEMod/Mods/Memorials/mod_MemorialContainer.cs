@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Xml;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.Memorials {

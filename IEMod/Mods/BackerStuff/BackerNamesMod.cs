@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using IEMod.Mods.ConsoleMod;
 using IEMod.Mods.Options;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.BackerStuff {

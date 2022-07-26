@@ -1,6 +1,6 @@
 using System;
 using IEMod.Helpers;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.QuickControls {
 	[NewType]

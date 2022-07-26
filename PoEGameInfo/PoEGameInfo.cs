@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Patchwork.Attributes;
+using Patchwork.AutoPatching;
 
 namespace PoEGameInfo {
 

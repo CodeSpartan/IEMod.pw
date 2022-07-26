@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.Mods.StringTable {
 

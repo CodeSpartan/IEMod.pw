@@ -1,7 +1,7 @@
 ﻿using IEMod.Helpers;
 using IEMod.Mods.Options;
 using System.Collections.Generic;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.HideWeaponEffects

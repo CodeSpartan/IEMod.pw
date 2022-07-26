@@ -2,7 +2,6 @@
 using System.Text;
 using IEMod.Helpers;
 using Patchwork;
-using Patchwork.Attributes;
 using UnityEngine;
 
 namespace IEMod.Mods.VersionNumber {

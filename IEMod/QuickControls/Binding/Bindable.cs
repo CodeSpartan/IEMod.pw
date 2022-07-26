@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 using IEMod.Helpers;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.QuickControls {
 	/// <summary>

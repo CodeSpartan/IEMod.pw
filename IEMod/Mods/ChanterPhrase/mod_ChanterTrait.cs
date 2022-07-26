@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using IEMod.Mods.Options;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.Mods.ChanterPhrase
 {

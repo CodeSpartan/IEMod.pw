@@ -1,5 +1,5 @@
 using IEMod.Mods.Options;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.Mods.CombatLooting {
 	[ModifiesType]

@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using IEMod.Helpers;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.QuickControls {
 

@@ -4,7 +4,7 @@ using System.Linq;
 using IEMod.Helpers;
 using IEMod.QuickControls;
 using IEMod.QuickControls.Controls;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.Options {

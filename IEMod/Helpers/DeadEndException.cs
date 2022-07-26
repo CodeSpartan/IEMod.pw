@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Runtime.CompilerServices;
-using Patchwork.Attributes;
+using Patchwork;
 
 namespace IEMod.Helpers
 {

@@ -1,7 +1,7 @@
 using System;
 using IEMod.Helpers;
 using IEMod.Mods.UICustomization;
-using Patchwork.Attributes;
+using Patchwork;
 using UnityEngine;
 
 namespace IEMod.Mods.Tooltips {

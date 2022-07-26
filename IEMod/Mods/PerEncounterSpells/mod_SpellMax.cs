@@ -1,4 +1,4 @@
-﻿using Patchwork.Attributes;
+﻿using Patchwork;
 using IEMod.Mods.Options;
 using System;
 using System.Collections.Generic;
