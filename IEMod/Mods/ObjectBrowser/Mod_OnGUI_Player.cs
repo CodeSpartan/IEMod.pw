@@ -150,10 +150,10 @@ namespace IEMod.Mods.ObjectBrowser {
 				float RectWidth = 400;
 				float RectHeight = 500;
 
-				float leftMenuStartWidth = Screen.width/2 - RectWidth*1.3f;
+				float leftMenuStartWidth = Screen.width/2 - RectWidth*1.375f;
 				float leftMenuStartHeight = Screen.height/2 - RectHeight/2;
 
-				float rightMenuStartWidth = (Screen.width/2 -1) - RectWidth*0.3f;
+				float rightMenuStartWidth = (Screen.width/2 -1) - RectWidth*0.375f;
 				float rightMenuStartHeight = Screen.height/2 - RectHeight/2;
 
 				float smallButtonWidth = 40;
@@ -304,12 +304,13 @@ namespace IEMod.Mods.ObjectBrowser {
 				GUI.EndScrollView(true);
 
 				/// second window
+				float MiddleMenuRectWidth = RectWidth - 100;
 
 				if (!inspectingParentless)
 				{
-					scrollPos2 = GUI.BeginScrollView (new Rect (rightMenuStartWidth, rightMenuStartHeight, RectWidth, RectHeight), scrollPos2, new Rect (0, 0, RectWidth - 20, scroll2Height < RectHeight ? RectHeight : scroll2Height));
+					scrollPos2 = GUI.BeginScrollView (new Rect (rightMenuStartWidth, rightMenuStartHeight, MiddleMenuRectWidth, RectHeight), scrollPos2, new Rect (0, 0, MiddleMenuRectWidth - 20, scroll2Height < RectHeight ? RectHeight : scroll2Height));
 
-					GUI.Box (new Rect (0, 0, RectWidth - 100, scroll2Height < RectHeight ? RectHeight : scroll2Height), "Components for: " + gameObjectsName);
+					GUI.Box (new Rect (0, 0, MiddleMenuRectWidth, scroll2Height < RectHeight ? RectHeight : scroll2Height), "Components for: " + gameObjectsName);
 
 					int num2 = 0;
 

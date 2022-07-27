@@ -808,7 +808,59 @@ namespace IEMod.Mods.ConsoleMod
                 }
             }
         }
-        
+
+        [NewMember]
+        public static UITexture GameBrowserBackground;
+
+        [NewMember]
+        public static void TT()
+        {
+            if (((Mod_OnGUI_Player)GameState.s_playerCharacter).showGameObjectBrowser == false)
+            {
+                if (((Mod_OnGUI_Player)GameState.s_playerCharacter).inspecting == null)
+                    ((Mod_OnGUI_Player)GameState.s_playerCharacter).inspecting = UICustomization.UICustomizer.UiCamera.transform;
+
+                if (GameBrowserBackground == null)
+                {
+                    UIMultiSpriteImageButton portraitLast = null;
+
+                    foreach (UIMultiSpriteImageButton btn in UnityEngine.Object.FindObjectsOfType<UIMultiSpriteImageButton>())
+                        if (btn.ToString() == "PartyPortrait(Clone) (UIMultiSpriteImageButton)" && portraitLast == null)
+                            portraitLast = btn;
+
+                    GameBrowserBackground = NGUITools.AddWidget<UITexture>(portraitLast.transform.parent.parent.gameObject);
+                    GameBrowserBackground.mainTexture = new Texture2D(500, 500);
+
+                    GameBrowserBackground.transform.localScale = new Vector3(1100f, 600f, 1f); // those values are for 1920*1080...
+                    //GameBrowserBackground.transform.localScale = new Vector3 (1600f, 800f, 1f); // those values are for 1280*1024
+
+                    // rescaler
+                    if (Screen.width != 1920)
+                    {
+                        float addwidth = (1920 - Screen.width) * 0.78f;
+                        float addheight = (1080 - Screen.height) * 0.55f;
+                        GameBrowserBackground.transform.localScale += new Vector3(addwidth, addheight, 0f);
+                    }
+
+                    BoxCollider boxColl = NGUITools.AddWidgetCollider(GameBrowserBackground.gameObject); // adding a box collider, it's required for the UINoClick component
+                    boxColl.gameObject.AddComponent<UINoClick>(); // this prevents clicks from going through the U-frame
+                    UIAnchor ank = GameBrowserBackground.gameObject.AddComponent<UIAnchor>();
+                    ank.side = UIAnchor.Side.Center;
+
+                }
+                else // if GameBrowserBackground had been previously created, simply activate it now
+                {
+                    GameBrowserBackground.gameObject.SetActive(true);
+                }
+
+                ((Mod_OnGUI_Player)GameState.s_playerCharacter).showGameObjectBrowser = true;
+            }
+            else
+            {
+                GameBrowserBackground.gameObject.SetActive(false);
+                ((Mod_OnGUI_Player)GameState.s_playerCharacter).showGameObjectBrowser = false;
+            }
+        }
 
     }
     /*
@@ -985,8 +1037,6 @@ namespace IEMod.Mods.ConsoleMod
 
 		[NewMember]
 		public  static GameObject modelViewerBackground;
-		[NewMember]
-		public  static UITexture GameBrowserBackground;
 
 		[NewMember]
 		public  static void ExtractMemorials()
@@ -1718,54 +1768,6 @@ namespace IEMod.Mods.ConsoleMod
 		public static void BB()
 		{
 			UICustomizer.ShowInterface(true);
-		}
-
-		[NewMember]
-		public static void TT()
-		{
-			if (((Mod_OnGUI_Player)GameState.s_playerCharacter).showGameObjectBrowser == false)
-			{
-				if (((Mod_OnGUI_Player)GameState.s_playerCharacter).inspecting == null)
-					((Mod_OnGUI_Player)GameState.s_playerCharacter).inspecting = UICustomizer.UiCamera.transform;
-
-				if (GameBrowserBackground == null)
-				{
-					UIMultiSpriteImageButton portraitLast = null;
-
-					foreach (UIMultiSpriteImageButton btn in UnityEngine.Object.FindObjectsOfType<UIMultiSpriteImageButton>())
-						if (btn.ToString() == "PartyPortrait(Clone) (UIMultiSpriteImageButton)" && portraitLast == null)
-							portraitLast = btn;
-
-					GameBrowserBackground = NGUITools.AddWidget<UITexture>(portraitLast.transform.parent.parent.gameObject);
-					GameBrowserBackground.mainTexture = new Texture2D(500, 500);
-
-					GameBrowserBackground.transform.localScale = new Vector3(1100f, 600f, 1f); // those values are for 1920*1080...
-																							   //GameBrowserBackground.transform.localScale = new Vector3 (1600f, 800f, 1f); // those values are for 1280*1024
-
-					// rescaler
-					if (Screen.width != 1920)
-					{
-						float addwidth = (1920 - Screen.width) * 0.78f;
-						float addheight = (1080 - Screen.height) * 0.55f;
-						GameBrowserBackground.transform.localScale += new Vector3(addwidth, addheight, 0f);
-					}
-
-					BoxCollider boxColl = NGUITools.AddWidgetCollider(GameBrowserBackground.gameObject); // adding a box collider, it's required for the UINoClick component
-					boxColl.gameObject.AddComponent<UINoClick>(); // this prevents clicks from going through the U-frame
-					UIAnchor ank = GameBrowserBackground.gameObject.AddComponent<UIAnchor>();
-					ank.side = UIAnchor.Side.Center;
-
-				}
-				else
-					GameBrowserBackground.gameObject.SetActive(true);
-
-				((Mod_OnGUI_Player)GameState.s_playerCharacter).showGameObjectBrowser = true; // temporarily turned off
-			}
-			else
-			{
-				GameBrowserBackground.gameObject.SetActive(false);
-				((Mod_OnGUI_Player)GameState.s_playerCharacter).showGameObjectBrowser = false;
-			}
 		}
 
 		[NewMember]
